@@ -434,5 +434,15 @@ select:focus {
         width: 100%;
         justify-content: center;
     }
-    
+
+    /* Language Selection */
+    select option {
+    background: var(--surface);
+    color: var(--text);
+}
+
+select:hover {
+    border-color: var(--cyan);
+    color: var(--bg);
+}
 }
