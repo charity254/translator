@@ -11,7 +11,7 @@ translateBtn.addEventListener('click', async () => {
     translateBtn.disabled = true;
 
     try {
-        const response = await fetch('http://127.0.0.1:8000/api/v1/translate-text', {
+        const response = await fetch('/api/v1/translate-text', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ text, targetLanguage: language.value })
