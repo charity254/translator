@@ -9,13 +9,13 @@ eng_to_sw = {
     "hello" : "habari",
     "buy maize":    "nunua mahindi",
     "good morning": "habari ya asubuhi",
-    "are you gong to work?": "unaenda kazini?",
+    "are you going to work?": "unaenda kazini?",
     "animals": "wanyama",
     "fruits": "matunda",
     "school": "shule",
     "go to bed": "enda kulala",
     "what do you want to eat?": "unataka kula nini?",
-    "I have finished studying": "nimemaliza kusoma",
+    "i have finished studying": "nimemaliza kusoma",
 }
 
 sw_to_eng = {v: k for k, v in eng_to_sw.items()}
