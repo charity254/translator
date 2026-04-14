@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translate - English ⇄ Swahili</title>
+    <link rel="stylesheet" href="{% static 'translate/style.css' %}">
+</head>
+<body>
+    <div class="grain"></div>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <div class="container">
+        <header>
+            <div class="icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="m5 8 6 6"/>
+                    <path d="m4 14 6-6 2-3"/>
+                    <path d="M2 5h12"/>
+                    <path d="M7 2h1"/>
+                    <path d="m22 22-5-10-5 10"/>
+                    <path d="M14 18h6"/>
+                </svg>
+            </div>
+            <h1>Translate</h1>
+        </header>
+
+        <div class="grid">
+            <div class="card input-card">
+                <label>Your Text</label>
+                <textarea id="inputText" placeholder="Type a word or phrase..."></textarea>
+            </div>
+
+            <div class="card output-card">
+                <label>Translation</label>
+                <div id="output" class="output">
+                    <p class="placeholder">Your translation will appear here</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <div class="language-select">
+                <label>Translate to:</label>
+                <select id="language">
+                    <option value="sw">Swahili</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+
+            <button id="translateBtn" class="btn">
+                <span>Translate</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M5 12h14"/>
+                    <path d="m12 5 7 7-7 7"/>
+                </svg>
+            </button>
+        </div>
+
+        <p class="hint">Try: "hello", "what do you want to eat?", "good morning"</p>
+    </div>
+
+    <script>
+    src="{% static 'translate/script.js' %}"></script>
+    </script>
+</body>
+</html>
