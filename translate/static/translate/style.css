@@ -434,6 +434,8 @@ select:focus {
         width: 100%;
         justify-content: center;
     }
+}
+
 
     /* Language Selection */
     select option {
@@ -444,5 +446,4 @@ select:focus {
 select:hover {
     border-color: var(--cyan);
     color: var(--bg);
-}
 }
